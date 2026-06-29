@@ -1,0 +1,20 @@
+---
+import { projects } from "../../data/projects";
+
+import SectionHeading from "../Common/SectionHeading.astro";
+
+import ProjectCard from "./ProjectCard.astro";
+---
+
+<section class="section">
+  <SectionHeading title="Selected Work" />
+
+  <p class="section-subtitle">
+    Enterprise platforms, AI systems and products I've designed, built and
+    delivered over the last decade.
+  </p>
+
+  <div class="project-grid">
+    {projects.map((project) => <ProjectCard project={project} />)}
+  </div>
+</section>

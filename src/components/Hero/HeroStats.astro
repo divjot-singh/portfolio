@@ -1,0 +1,23 @@
+---
+const stats = [
+  ["Experience", "9+ Years"],
+
+  ["Products", "20+"],
+
+  ["Domains", "Healthcare • AI • Gaming"],
+
+  ["Platforms", "Web • Mobile"],
+];
+---
+
+<div class="hero-stats">
+  {
+    stats.map(([label, value]) => (
+      <div>
+        <h4>{value}</h4>
+
+        <p>{label}</p>
+      </div>
+    ))
+  }
+</div>

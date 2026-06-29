@@ -1,0 +1,17 @@
+---
+import { resume } from "../../data/resume";
+import HeroStats from "./HeroStats.astro";
+---
+
+<section class="hero">
+  <span class="status"> Available for Remote Opportunities </span>
+
+  <h1>
+    {resume.personal.name}
+  </h1>
+
+  <p class="tagline">
+    {resume.personal.tagline}
+  </p>
+  <HeroStats />
+</section>

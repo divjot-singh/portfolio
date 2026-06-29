@@ -1,0 +1,55 @@
+---
+interface Props {
+  company: string;
+
+  title: string;
+
+  duration: string;
+
+  highlights: string[];
+
+  stack: string[];
+}
+
+const {
+  company,
+
+  title,
+
+  duration,
+
+  highlights,
+
+  stack,
+} = Astro.props;
+---
+
+<div class="timeline-item">
+  <div class="timeline-dot"></div>
+
+  <div class="timeline-content">
+    <div class="timeline-header">
+      <div>
+        <h3>
+          {company}
+        </h3>
+
+        <p>
+          {title}
+        </p>
+      </div>
+
+      <span>
+        {duration}
+      </span>
+    </div>
+
+    <ul>
+      {highlights.map((item) => <li>{item}</li>)}
+    </ul>
+
+    <div class="tech-stack">
+      {stack.map((item) => <span>{item}</span>)}
+    </div>
+  </div>
+</div>

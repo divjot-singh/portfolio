@@ -1,0 +1,23 @@
+---
+import { resume } from "../../data/resume";
+
+import Contact from "./Contact.astro";
+
+import Skills from "./Skills.astro";
+---
+
+<aside class="sidebar">
+  <div>
+    <h2>
+      {resume.personal.name}
+    </h2>
+
+    <p>
+      {resume.personal.title}
+    </p>
+  </div>
+
+  <Contact />
+
+  <Skills />
+</aside>

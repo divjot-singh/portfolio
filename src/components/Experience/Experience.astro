@@ -1,0 +1,22 @@
+---
+import SectionHeading from "../Common/SectionHeading.astro";
+import TimelineItem from "./TimelineItem.astro";
+
+import { experience } from "../../data/experience";
+---
+
+<section class="section">
+  <SectionHeading title="Experience" />
+
+  {
+    experience.map((job) => (
+      <TimelineItem
+        company={job.company}
+        title={job.title}
+        duration={job.duration}
+        highlights={job.highlights}
+        stack={job.stack}
+      />
+    ))
+  }
+</section>

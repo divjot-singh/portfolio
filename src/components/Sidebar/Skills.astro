@@ -1,0 +1,21 @@
+---
+import { resume } from "../../data/resume";
+---
+
+<div class="sidebar-section">
+  <h3>TECH STACK</h3>
+
+  {
+    Object.entries(resume.skills).map(([category, values]) => (
+      <div class="skill-category">
+        <h4>{category}</h4>
+
+        <div class="chips">
+          {values.map((skill) => (
+            <span>{skill}</span>
+          ))}
+        </div>
+      </div>
+    ))
+  }
+</div>

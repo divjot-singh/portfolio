@@ -1,0 +1,15 @@
+---
+const { metrics } = Astro.props;
+---
+
+<div class="metrics">
+  {
+    metrics?.map((metric: any) => (
+      <div class="metric-card">
+        <h3>{metric.value}</h3>
+
+        <p>{metric.label}</p>
+      </div>
+    ))
+  }
+</div>

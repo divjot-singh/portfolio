@@ -1,0 +1,19 @@
+---
+import { resume } from "../../data/resume";
+---
+
+<div class="sidebar-section">
+  <h3>CONTACT</h3>
+
+  <a href={`mailto:${resume.personal.email}`}>
+    {resume.personal.email}
+  </a>
+
+  <a href={`tel:${resume.personal.phone}`}>
+    {resume.personal.phone}
+  </a>
+
+  <p>{resume.personal.location}</p>
+
+  <a href={resume.personal.linkedin} target="_blank"> LinkedIn </a>
+</div>
