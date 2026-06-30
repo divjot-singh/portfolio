@@ -1,0 +1,30 @@
+---
+const { project } = Astro.props;
+---
+
+<article class="project-list-item">
+  <div class="project-list-header">
+    <div>
+      <h3>{project.title}</h3>
+      <p>{project.subtitle}</p>
+    </div>
+
+    <span>{project.duration}</span>
+  </div>
+
+  <p class="project-company">
+    <strong>{project.company}</strong> • {project.role}
+  </p>
+
+  <p class="project-summary">
+    {project.description}
+  </p>
+
+  <div class="project-stack">
+    {
+      project.stack
+        .slice(0, 5)
+        .map((tech: string) => <span class="tech-pill">{tech}</span>)
+    }
+  </div>
+</article>

@@ -9,6 +9,7 @@ interface Props {
   highlights: string[];
 
   stack: string[];
+  printable?: boolean;
 }
 
 const {
@@ -21,7 +22,9 @@ const {
   highlights,
 
   stack,
+  printable = false,
 } = Astro.props;
+const visibleHighlights = printable ? highlights.slice(0, 4) : highlights;
 ---
 
 <div class="timeline-item">
@@ -45,7 +48,7 @@ const {
     </div>
 
     <ul>
-      {highlights.map((item) => <li>{item}</li>)}
+      {visibleHighlights.map((item) => <li>{item}</li>)}
     </ul>
 
     <div class="tech-stack">

@@ -3,6 +3,8 @@ import SectionHeading from "../Common/SectionHeading.astro";
 import TimelineItem from "./TimelineItem.astro";
 
 import { experience } from "../../data/experience";
+
+const { printable = false } = Astro.props;
 ---
 
 <section class="section">
@@ -16,6 +18,7 @@ import { experience } from "../../data/experience";
         duration={job.duration}
         highlights={job.highlights}
         stack={job.stack}
+        printable={printable}
       />
     ))
   }

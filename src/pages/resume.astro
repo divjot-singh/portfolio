@@ -2,33 +2,33 @@
 import Layout from "../layouts/Layout.astro";
 
 import Sidebar from "../components/Sidebar/Sidebar.astro";
-
 import Hero from "../components/Hero/Hero.astro";
 
 import SectionHeading from "../components/Common/SectionHeading.astro";
 
 import Experience from "../components/Experience/Experience.astro";
-
 import Projects from "../components/Projects/Projects.astro";
 
 import { resume } from "../data/resume";
 ---
 
-<Layout>
-  <div class="resume">
+<Layout title="Divjot Singh | Resume">
+  <div class="resume printable-resume">
     <Sidebar />
 
     <main>
-      <Hero />
       <section>
         <SectionHeading title="About" />
 
-        <p>
+        <p class="about">
           {resume.about}
         </p>
-        <Experience />
-        <Projects />
       </section>
+      <Hero printable />
+
+      <Experience printable />
+
+      <Projects printable />
     </main>
   </div>
 </Layout>

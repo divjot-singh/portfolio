@@ -1,17 +1,19 @@
 ---
 import { resume } from "../../data/resume";
 import HeroStats from "./HeroStats.astro";
+
+const { printable = false } = Astro.props;
 ---
 
 <section class="hero">
-  <span class="status"> Available for Remote Opportunities </span>
+  {
+    !printable && (
+      <span class="status"> Available for Remote Opportunities </span>
+    )
+  }
 
-  <h1>
-    {resume.personal.name}
-  </h1>
+  {!printable && <h1>{resume.personal.name}</h1>}
 
-  <p class="tagline">
-    {resume.personal.tagline}
-  </p>
+  {!printable && <p class="tagline">{resume.personal.tagline}</p>}
   <HeroStats />
 </section>

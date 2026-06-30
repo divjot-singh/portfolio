@@ -7,12 +7,17 @@ export const projects = [
     company: "Tredence Analytics",
 
     role: "Manager - Application Development",
-
+    lessons:
+  "This project reinforced the importance of designing reusable frameworks instead of solving individual business problems. Investing in extensibility early significantly accelerated future feature delivery.",
+    architecture:
+  "Designed a Micro UI architecture with reusable widget components backed by configuration-driven SQL generation, MCP services, AI agents, and reusable personalization modules.",
     accent:"#2563eb",
 
     team: "5 Engineers",
     duration: "Aug 2025 – Jun 2026",
     image: "/projects/intelligence-hub.png",
+    outcome:
+  "Successfully delivered Phase 1 of the Intelligence Hub platform for over 30 enterprise users and contributed to the architecture that scaled to 100+ users in Phase 2. Established reusable widget frameworks, personalization, and Micro UI foundations for future enterprise use cases.",
 
     description:
       "Led engineering delivery of Intelligence Hub, an AI-powered enterprise analytics platform designed to replace traditional BI dashboards with conversational analytics, reusable widget frameworks, AI-generated insights, and Micro UI architecture. Delivered production use cases while evolving the platform into a reusable framework supporting 30+ users in Phase 1 and 100+ users in Phase 2.",
@@ -70,10 +75,16 @@ metrics: [
 
     company: "Microsoft",
     duration: "Jan 2022 – May 2025",
+    architecture:
+  "Implemented a platform-independent framework using reusable SDKs, adapter patterns, Adaptive Cards, and shared abstractions across Teams, Outlook, and Copilot.",
 
     role: "Software Engineer II",
+    lessons:
+  "Working on Microsoft 365 taught me how adapter patterns and shared abstractions can dramatically reduce maintenance across multiple products.",
     accent:"#0f766e",
     slug: "microsoft-action-message-extensions",
+    outcome:
+  "Delivered reusable Action Message Extensions powering integrations across Microsoft Teams, Outlook, and Copilot while enabling third-party developers to build platform-independent experiences.",
 
 subtitle: "Action Message Extensions Platform",
 
@@ -132,13 +143,19 @@ metrics: [
 
     company: "GreyOrange",
 
+    lessons:
+  "Large enterprise migrations require careful backward compatibility planning. Technical implementation is often easier than change management.",
     role: "Senior Full Stack Engineer",
     accent:"#7c3aed",
 
     team: "6 Engineers",
     duration: "May 2025 - Apr 2026",
+    architecture:
+  "Built a multi-tenant feature configuration platform supporting hierarchical tenant, country, and store overrides with React, Flutter, and NestJS.",
 
     image: "/projects/greyorange.png",
+    outcome:
+  "Successfully migrated feature management from LaunchDarkly to an internal platform, improving configurability across tenants, countries, and stores without disrupting production.",
     slug: "greyorange-gstore",
 
 subtitle: "Retail Operations Platform",
@@ -195,7 +212,8 @@ metrics: [
     role: "Founder & Lead Engineer",
     duration: "May 2025 – Jul 2025",
     accent:"#2563eb",
-
+outcome:
+  "Built and launched a multi-tenant healthcare scheduling platform integrating conversational WhatsApp booking with provider dashboards and appointment automation.",
     slug: "smart-slot-ai",
 
 subtitle: "Healthcare Scheduling Platform",
@@ -255,7 +273,8 @@ metrics: [
     slug: "zap",
 
 subtitle: "WhatsApp Commerce Platform",
-
+outcome:
+  "Designed and built a conversational commerce platform allowing merchants to receive and manage customer orders entirely through WhatsApp.",
 metrics: [
   {
     value: "WhatsApp",
@@ -304,12 +323,16 @@ metrics: [
 
   {
     title: "Game.tv Tournament Platform",
+    lessons:
+  "Building an MVP in 45 days taught me to prioritize architecture that enables rapid iteration instead of premature optimization.",
 
     category: "Gaming Platform",
 
     company: "Game.tv",
 
     duration: "Sep 2019 – Jan 2022",
+    outcome:
+  "Delivered a production Flutter application within 45 days that helped power an esports platform with over 100K iOS downloads.",
     accent:"#7c3aed",
 
     role: "Senior Software Engineer",

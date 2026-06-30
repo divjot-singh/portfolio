@@ -9,14 +9,17 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
+    "generate:pdf": "node export-pdf.js",
     "astro": "astro"
   },
   "dependencies": {
     "@iconify-json/tabler": "^1.2.35",
+    "@playwright/test": "^1.61.1",
     "@tailwindcss/vite": "^4.3.1",
     "astro": "^7.0.3",
     "astro-icon": "^1.1.5",
     "clsx": "^2.1.1",
+    "puppeteer": "^25.2.1",
     "tailwindcss": "^4.3.1"
   }
 }

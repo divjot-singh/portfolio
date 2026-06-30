@@ -1,100 +1,56 @@
 ---
-import Chip from "../Common/Chip.astro";
-import Metrics from "./Metrics.astro";
-
 const { project } = Astro.props;
 ---
 
-<article class="project-card" style={`border-top:5px solid ${project.accent}`}>
-  {
-    project.image && (
-      <img src={project.image} alt={project.title} class="project-image" />
-    )
-  }
+<a href={`/projects/${project.slug}`} class="project-card-link">
+  <article
+    class="project-card"
+    style={`border-left:4px solid ${project.accent}`}
+  >
+    <div class="project-top">
+      <span class="category">{project.category}</span>
 
-  <div class="project-top">
-    <span class="category">
-      {project.category}
-    </span>
-
-    {project.featured && <span class="featured">★ Featured</span>}
-  </div>
-
-  <div class="project-heading">
-    <h3 class="project-title">
-      {project.title}
-    </h3>
-
-    {project.subtitle && <p class="project-subtitle">{project.subtitle}</p>}
-  </div>
-
-  <div class="meta">
-    <div>
-      <span>Company</span>
-      <strong>{project.company}</strong>
+      {project.featured && <span class="featured">Featured</span>}
     </div>
 
-    <div>
-      <span>Role</span>
-      <strong>{project.role}</strong>
+    <div class="project-heading">
+      <h3 class="project-title">{project.title}</h3>
+
+      {project.subtitle && <p class="project-subtitle">{project.subtitle}</p>}
     </div>
 
-    <div>
-      <span>Duration</span>
-      <strong>{project.duration}</strong>
+    <div class="project-meta">
+      <span>{project.company}</span>
+
+      <span>•</span>
+
+      <span>{project.role}</span>
     </div>
-  </div>
 
-  <Metrics metrics={project.metrics} />
+    <div class="project-duration">
+      {project.duration}
+    </div>
 
-  <section>
-    <h4 class="section-title">Overview</h4>
-
-    <p class="description">
+    <p class="project-description">
       {project.description}
     </p>
-  </section>
-
-  <section>
-    <h4 class="section-title">Engineering Challenge</h4>
-
-    <p class="description">
-      {project.challenge}
-    </p>
-  </section>
-
-  <section>
-    <h4 class="section-title">Key Contributions</h4>
-
-    <ul class="contribution-list">
-      {project.contributions.map((item: string) => <li>{item}</li>)}
-    </ul>
-  </section>
-
-  <section>
-    <h4 class="section-title">Technology Stack</h4>
 
     <div class="project-stack">
-      {project.stack.map((tech: string) => <Chip label={tech} />)}
+      {
+        project.stack
+          .slice(0, 4)
+          .map((tech: string) => <span class="tech-pill">{tech}</span>)
+      }
+
+      {
+        project.stack.length > 4 && (
+          <span class="tech-pill">+{project.stack.length - 4}</span>
+        )
+      }
     </div>
-  </section>
 
-  <div class="project-actions">
-    <a class="case-study-link" href={`/projects/${project.slug}`}>
-      View Case Study →
-    </a>
-
-    {
-      project.website && (
-        <a
-          class="project-link"
-          href={project.website}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Live Product ↗
-        </a>
-      )
-    }
-  </div>
-</article>
+    <div class="project-footer">
+      <span class="case-study-text"> Read Case Study → </span>
+    </div>
+  </article>
+</a>

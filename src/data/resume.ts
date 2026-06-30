@@ -7,17 +7,17 @@ export const resume = {
     tagline:
       "Building scalable AI-powered web, mobile, and enterprise platforms.",
 
-    email: "YOUR_EMAIL",
+    email: "div1495@gmail.com",
 
-    phone: "YOUR_PHONE",
+    phone: "+91-9805387500",
 
     location: "Noida, India",
 
-    linkedin: "YOUR_LINKEDIN",
+    linkedin: "https://www.linkedin.com/in/divjot-singh-043468147/",
 
-    github: "YOUR_GITHUB",
+    github: "https://github.com/divjot-singh",
 
-    website: "YOUR_PORTFOLIO"
+    website: "https://portfolio.div1495.workers.dev/"
   },
 
   about: `Software Engineer with 10+ years of experience designing and building scalable web, mobile, AI-powered, and enterprise platforms. Experienced across the full product lifecycle—from architecture and backend services to modern frontend experiences and cross-platform mobile applications. Proven track record of delivering products in enterprise, healthcare, banking, gaming, legal-tech, and e-commerce domains for organizations including Microsoft, Tredence, and high-growth startups.
