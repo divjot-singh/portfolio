@@ -702,6 +702,7 @@ font-size:14px;
     display:flex;
     flex-wrap:wrap;
     gap:8px;
+    margin-bottom:8px;
 }
 
 .tech-pill{
@@ -830,6 +831,7 @@ font-size:14px;
     margin-top:16px;
     box-shadow:0 20px 50px rgba(0,0,0,.08);
 }
+
 
 .case-section{
     margin-top:64px;

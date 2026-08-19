@@ -321,6 +321,66 @@ metrics: [
     featured: false
   },
 
+ {
+title: "Productivity Tracker",
+category: "AI-Powered Productivity Platform",
+company: "Personal Project",
+role: "Full-Stack Developer",
+lessons:
+"Building this project reinforced that configuration-driven systems scale better than hardcoded features. Separating providers, executors, and renderers plus deterministic + LLM response paths made iteration faster and safer as the product grew.",
+architecture:
+"Designed a Next.js App Router + Firebase architecture with user-scoped Firestore data, a configurable widget engine (provider → executor → renderer), and a chat intelligence pipeline (fetch → normalize → score → HITL policy → deterministic/LLM response) including SSE streaming and safety controls.",
+accent: "#059669",
+team: "Solo",
+duration: "2026 – Present",
+image: "/projects/productivity-tracker.png",
+outcome:
+"Delivered a production-ready mobile-first productivity system with authentication, goals, daily scoring, configurable dashboard visualizations, and grounded AI chat. Established reusable architecture patterns for future features, including onboarding flows, visualization management, and chat intelligence extensions.",
+description:
+"Built Productivity Tracker as a modern personal analytics app that combines daily habit logging, weighted scoring, customizable visualizations, and conversational insights. Implemented a reusable backend/frontend architecture so dashboards and chat behavior can evolve through configuration and modular execution rather than one-off UI logic.",
+challenge:
+"Balancing fast feature delivery with long-term architecture quality across scoring, dashboards, onboarding, and AI chat while keeping all data strictly user-scoped and maintaining a clean mobile-first UX.",
+contributions: [
+"Implemented Firebase Auth and user-scoped Firestore data model",
+"Built goals, entries, and scoring workflows with TypeScript models",
+"Designed configurable dashboard architecture with widget providers, executors, and renderers",
+"Implemented visualization management flow and settings integration",
+"Built hybrid chat system with deterministic resolvers and LLM fallback",
+"Implemented chat normalization/scoring pipeline across entries, goals, and visualizations",
+"Added SSE streaming chat responses with activity lifecycle events",
+"Added safety controls including request validation, rate limiting, and prompt-injection checks",
+"Implemented onboarding flow based on goals-complete state and empty-state UX"
+],
+stack: [
+"Next.js App Router",
+"TypeScript",
+"React",
+"Tailwind CSS",
+"shadcn/ui",
+"Firebase Auth",
+"Firestore",
+"LLM Integration",
+"SSE Streaming"
+],
+slug: "productivity-tracker",
+subtitle: "Personal AI Productivity Analytics App",
+metrics: [
+{
+value: "19",
+label: "Deterministic Chat Resolvers"
+},
+{
+value: "84 Days",
+label: "Default Chat Retrieval Window"
+},
+{
+value: "3",
+label: "Normalized Data Domains"
+}
+],
+featured: true
+},
+
   {
     title: "Game.tv Tournament Platform",
     lessons:
