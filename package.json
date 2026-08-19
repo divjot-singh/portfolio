@@ -8,11 +8,14 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
-    "preview": "astro preview",
+    "preview": "npm run build && wrangler dev",
     "generate:pdf": "node export-pdf.js",
-    "astro": "astro"
+    "astro": "astro",
+    "generate-types": "wrangler types",
+    "deploy": "npm run build && wrangler deploy"
   },
   "dependencies": {
+    "@astrojs/cloudflare": "^14.0.1",
     "@iconify-json/tabler": "^1.2.35",
     "@playwright/test": "^1.61.1",
     "@tailwindcss/vite": "^4.3.1",
@@ -21,5 +24,8 @@
     "clsx": "^2.1.1",
     "puppeteer": "^25.2.1",
     "tailwindcss": "^4.3.1"
+  },
+  "devDependencies": {
+    "wrangler": "^4.105.0"
   }
 }
