@@ -2,7 +2,7 @@ export const experience = [
   {
     company: "Tredence Analytics",
 
-    title: "Manager - Application Development",
+    title: "Manager - Application Development (Platform architecture + AI + developer infrastructure + leadership)",
 
     location: "Bengaluru, India",
 
@@ -11,9 +11,12 @@ export const experience = [
     highlights: [
       "Leading application development for the Intelligence Hub platform, an AI-powered analytics platform designed to replace traditional dashboarding solutions with conversational and intelligent user experiences.",
 
+            "Architected the Security Module for Intelligence Hub V2 including RBAC, publishing workflows, approval pipelines, and onboarding of Micro UIs and MCP servers.",
+
+
       "Led delivery of the first production use cases on the V1 platform, driving frontend architecture, technical design, sprint execution, and engineering delivery.",
 
-      "Designed the widget framework enabling reusable visualizations through configuration-driven widgets combining visualization metadata with query definitions.",
+      "Architected a configuration-driven widget platform used across 3 dashboards and 2 business domains, reducing implementation time for new analytics experiences.",
 
       "Contributed to the architecture of a JSON-to-SQL conversion engine that transformed widget configurations into executable analytical queries across multiple business domains.",
 
@@ -21,7 +24,6 @@ export const experience = [
 
       "Designed scalable personalization capabilities including widget layouts, dashboard customization, page-level personalization, and reusable widget filters.",
 
-      "Architected the Security Module for Intelligence Hub V2 including RBAC, publishing workflows, approval pipelines, and onboarding of Micro UIs and MCP servers.",
 
       "Contributed to the platform architecture for Micro UI Registry, MCP Registry, reusable component libraries, widget infrastructure, personalization services, and developer templates.",
 
@@ -46,14 +48,14 @@ export const experience = [
   {
     company: "Independent Product Development & Consulting",
 
-    title: "Founder / Consulting Engineer",
+    title: "Founder & Lead Engineer — Independent Product Development & Consulting",
 
     location: "Remote",
 
     duration: "May 2025 – Jul 2025",
 
     highlights: [
-      "Built Smart Slot AI, a WhatsApp-first appointment scheduling platform featuring intelligent booking flows, provider dashboards, and conversational automation.",
+      "Built and launched multiple SaaS products from architecture through implementation, including healthcare scheduling and conversational commerce platforms.",
 
       "Developed Zap, a commerce platform enabling businesses to receive, manage, and track customer orders directly through WhatsApp.",
 
@@ -75,13 +77,14 @@ export const experience = [
   {
     company: "Microsoft",
 
-    title: "Software Engineer II",
+    title: "Software Engineer II · Microsoft 365 / Teams / Outlook / Copilot",
 
     location: "Noida, India",
 
     duration: "Jan 2022 – May 2025",
 
     highlights: [
+      "Built and shipped Microsoft 365 experiences used by millions of users, with a focus on React, TypeScript, extensibility platforms and AI-powered Copilot experiences.",
       "Developed features across Microsoft Teams, Outlook Web App, and Microsoft Copilot, contributing to experiences used by millions of users worldwide.",
 
       "Built Action Message Extensions using Brokered Architecture, simplifying third-party integrations and enabling extensible actions across Microsoft 365 applications.",

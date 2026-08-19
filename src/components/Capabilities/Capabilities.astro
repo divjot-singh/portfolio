@@ -1,0 +1,19 @@
+---
+import { capabilities } from "../../data/capabilities";
+import SectionHeading from "../Common/SectionHeading.astro";
+import CapabilityCard from "./CapabilityCard.astro";
+
+const { printable = false } = Astro.props;
+---
+
+<section class="section capability-section">
+  <SectionHeading title="What I can help your team build" />
+
+  <div class="capability-grid">
+    {
+      capabilities.map((capability) => (
+        <CapabilityCard title={capability.title} items={capability.items} />
+      ))
+    }
+  </div>
+</section>

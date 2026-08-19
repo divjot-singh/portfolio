@@ -136,7 +136,69 @@ metrics: [
     featured: true
   },
 
+
+
   {
+    title: "Smart Slot AI",
+
+    category: "Healthcare SaaS",
+
+    company: "Mindfusion Studios",
+
+    role: "Founder & Lead Engineer",
+    duration: "May 2025 – Jul 2025",
+    accent:"#2563eb",
+outcome:
+  "Built and launched a multi-tenant healthcare scheduling platform integrating conversational WhatsApp booking with provider dashboards and appointment automation.",
+    slug: "smart-slot-ai",
+
+subtitle: "Healthcare Scheduling Platform",
+
+metrics: [
+  {
+    value: "Multi",
+    label: "Tenant"
+  },
+  {
+    value: "2",
+    label: "Engineers"
+  },
+  {
+    value: "WhatsApp",
+    label: "Automation"
+  }
+],
+    team: "2 Engineers",
+
+    image: "/projects/smartslot.png",
+
+    description:
+      "Designed and built a multi-tenant healthcare appointment platform enabling clinics and practitioners to manage bookings directly through WhatsApp using conversational scheduling, provider dashboards, and workflow automation.",
+
+    challenge:
+      "Researching Twilio's WhatsApp ecosystem while designing a scalable multi-tenant backend supporting providers, clinics, conversational booking, and operational dashboards.",
+
+    contributions: [
+      "Designed complete application architecture",
+      "Developed NestJS backend",
+      "Built React dashboard",
+      "Implemented WhatsApp integration",
+      "Designed multi-tenant architecture",
+      "Led engineering delivery"
+    ],
+
+    stack: [
+      "React",
+      "NestJS",
+      "MongoDB",
+      "Twilio",
+      "WhatsApp"
+    ],
+
+    featured: true
+  },
+
+    {
     title: "GreyOrange GStore",
 
     category: "Retail Operations Platform",
@@ -201,126 +263,6 @@ metrics: [
 
     website: "https://www.greyorange.com/gstore/"
   },
-
-  {
-    title: "Smart Slot AI",
-
-    category: "Healthcare SaaS",
-
-    company: "Mindfusion Studios",
-
-    role: "Founder & Lead Engineer",
-    duration: "May 2025 – Jul 2025",
-    accent:"#2563eb",
-outcome:
-  "Built and launched a multi-tenant healthcare scheduling platform integrating conversational WhatsApp booking with provider dashboards and appointment automation.",
-    slug: "smart-slot-ai",
-
-subtitle: "Healthcare Scheduling Platform",
-
-metrics: [
-  {
-    value: "Multi",
-    label: "Tenant"
-  },
-  {
-    value: "2",
-    label: "Engineers"
-  },
-  {
-    value: "WhatsApp",
-    label: "Automation"
-  }
-],
-    team: "2 Engineers",
-
-    image: "/projects/smartslot.png",
-
-    description:
-      "Designed and built a multi-tenant healthcare appointment platform enabling clinics and practitioners to manage bookings directly through WhatsApp using conversational scheduling, provider dashboards, and workflow automation.",
-
-    challenge:
-      "Researching Twilio's WhatsApp ecosystem while designing a scalable multi-tenant backend supporting providers, clinics, conversational booking, and operational dashboards.",
-
-    contributions: [
-      "Designed complete application architecture",
-      "Developed NestJS backend",
-      "Built React dashboard",
-      "Implemented WhatsApp integration",
-      "Designed multi-tenant architecture",
-      "Led engineering delivery"
-    ],
-
-    stack: [
-      "React",
-      "NestJS",
-      "MongoDB",
-      "Twilio",
-      "WhatsApp"
-    ],
-
-    featured: true
-  },
-
-  {
-    title: "Zap",
-
-    category: "Conversational Commerce",
-
-    company: "Mindfusion Studios",
-
-    role: "Founder & Lead Engineer",
-    slug: "zap",
-
-subtitle: "WhatsApp Commerce Platform",
-outcome:
-  "Designed and built a conversational commerce platform allowing merchants to receive and manage customer orders entirely through WhatsApp.",
-metrics: [
-  {
-    value: "WhatsApp",
-    label: "Commerce"
-  },
-  {
-    value: "2",
-    label: "Engineers"
-  },
-  {
-    value: "React",
-    label: "Dashboard"
-  }
-],
-
-    duration: "May 2025 – Jul 2025",
-
-    accent:"#0f766e",
-    team: "2 Engineers",
-
-    image: "/projects/zap.png",
-
-    description:
-      "Built a conversational commerce platform enabling businesses to receive, manage and fulfil customer orders entirely through WhatsApp with dedicated merchant dashboards and order management workflows.",
-
-    challenge:
-      "Designing intuitive conversational commerce experiences while integrating WhatsApp messaging and merchant workflows into a scalable backend platform.",
-
-    contributions: [
-      "Designed complete architecture",
-      "Built merchant dashboard",
-      "Implemented WhatsApp ordering",
-      "Designed order lifecycle",
-      "Led engineering delivery"
-    ],
-
-    stack: [
-      "React",
-      "NestJS",
-      "MongoDB",
-      "Twilio"
-    ],
-
-    featured: false
-  },
-
  {
 title: "Productivity Tracker",
 category: "AI-Powered Productivity Platform",
@@ -380,8 +322,7 @@ label: "Normalized Data Domains"
 ],
 featured: true
 },
-
-  {
+{
     title: "Game.tv Tournament Platform",
     lessons:
   "Building an MVP in 45 days taught me to prioritize architecture that enables rapid iteration instead of premature optimization.",
@@ -444,5 +385,67 @@ metrics: [
     featured: false,
 
     website: "https://www.game.tv/"
+  },
+  {
+    title: "Zap",
+
+    category: "Conversational Commerce",
+
+    company: "Mindfusion Studios",
+
+    role: "Founder & Lead Engineer",
+    slug: "zap",
+
+subtitle: "WhatsApp Commerce Platform",
+outcome:
+  "Designed and built a conversational commerce platform allowing merchants to receive and manage customer orders entirely through WhatsApp.",
+metrics: [
+  {
+    value: "WhatsApp",
+    label: "Commerce"
+  },
+  {
+    value: "2",
+    label: "Engineers"
+  },
+  {
+    value: "React",
+    label: "Dashboard"
   }
+],
+
+    duration: "May 2025 – Jul 2025",
+
+    accent:"#0f766e",
+    team: "2 Engineers",
+
+    image: "/projects/zap.png",
+
+    description:
+      "Built a conversational commerce platform enabling businesses to receive, manage and fulfil customer orders entirely through WhatsApp with dedicated merchant dashboards and order management workflows.",
+
+    challenge:
+      "Designing intuitive conversational commerce experiences while integrating WhatsApp messaging and merchant workflows into a scalable backend platform.",
+
+    contributions: [
+      "Designed complete architecture",
+      "Built merchant dashboard",
+      "Implemented WhatsApp ordering",
+      "Designed order lifecycle",
+      "Led engineering delivery"
+    ],
+
+    stack: [
+      "React",
+      "NestJS",
+      "MongoDB",
+      "Twilio"
+    ],
+
+    featured: false
+  },
+
+
+
+  
 ];

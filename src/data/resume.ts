@@ -2,10 +2,10 @@ export const resume = {
   personal: {
     name: "Divjot Singh",
 
-    title: "Senior Full-Stack & AI Platform Engineer",
+    title: "Senior / Staff Full-Stack Engineer specializing in AI-powered platforms",
 
     tagline:
-      "Building scalable AI-powered web, mobile, and enterprise platforms.",
+      "10+ years building enterprise products, developer platforms and AI-powered applications with React, TypeScript, Next.js, Node.js and cloud-native architectures.",
 
     email: "div1495@gmail.com",
 
