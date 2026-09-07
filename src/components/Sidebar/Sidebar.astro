@@ -4,6 +4,8 @@ import { resume } from "../../data/resume";
 import Contact from "./Contact.astro";
 
 import Skills from "./Skills.astro";
+
+const printable = Astro.url.pathname === "/resume";
 ---
 
 <aside class="sidebar">
@@ -17,7 +19,7 @@ import Skills from "./Skills.astro";
     </p>
   </div>
 
-  <div id="r" class="badge">
+  {!printable && <div id="r" class="badge">
     <style>
       @import "https://use.typekit.net/kmj5qkr.css";
       :root {
@@ -107,9 +109,9 @@ import Skills from "./Skills.astro";
         >
       </div>
     </div>
-  </div>
+  </div>}
 
-  <Contact />
+  <Contact printable={printable} />
 
   <Skills />
 </aside>

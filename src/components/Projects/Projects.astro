@@ -5,6 +5,7 @@ import ProjectCard from "./ProjectCard.astro";
 import ProjectListItem from "./ProjectListItem.astro";
 
 const { printable = false } = Astro.props;
+const selectedProjects = projects.filter((project) => project.featured);
 ---
 
 <section id="projects" class="section">
@@ -19,13 +20,13 @@ const { printable = false } = Astro.props;
   {
     printable ? (
       <div class="project-list">
-        {projects.map((project) => (
+        {selectedProjects.map((project) => (
           <ProjectListItem project={project} />
         ))}
       </div>
     ) : (
       <div class="project-grid">
-        {projects.map((project) => (
+        {selectedProjects.map((project) => (
           <ProjectCard project={project} />
         ))}
       </div>

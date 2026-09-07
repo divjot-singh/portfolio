@@ -8,11 +8,13 @@ const { printable = false } = Astro.props;
 <section class="hero">
   {
     !printable && (
-      <span class="status"> Open to Remote & International Opportunities </span>
+      <span class="status">Open to remote roles and international relocation</span>
     )
   }
 
   {!printable && <h1>{resume.personal.name}</h1>}
+
+  {!printable && <p class="eyebrow">Senior / Staff Full-Stack Engineer | AI Platforms</p>}
 
   {!printable && <p class="tagline">{resume.personal.tagline}</p>}
   <HeroStats />

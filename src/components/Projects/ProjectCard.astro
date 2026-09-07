@@ -31,9 +31,7 @@ const { project } = Astro.props;
       {project.duration}
     </div>
 
-    <p class="project-description">
-      {project.description}
-    </p>
+    <p class="project-description">{project.outcome ?? project.description}</p>
 
     <div class="project-stack">
       {

@@ -8,8 +8,9 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
+    "stop":"astro dev stop",
     "preview": "npm run build && wrangler dev",
-    "generate:pdf": "node export-pdf.js",
+    "generate:pdf": "node src/export-pdf.js",
     "astro": "astro",
     "generate-types": "wrangler types",
     "deploy": "npm run build && wrangler deploy"

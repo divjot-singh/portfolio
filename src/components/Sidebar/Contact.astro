@@ -1,39 +1,57 @@
 ---
 import { resume } from "../../data/resume";
+
+const { printable = false } = Astro.props;
 ---
 
 <div class="sidebar-section">
   <h3>CONTACT</h3>
 
-  <a href={`mailto:${resume.personal.email}`}>
-    {resume.personal.email}
-  </a>
+  {
+    printable ? (
+      <p>{resume.personal.email}</p>
+    ) : (
+      <a href={`mailto:${resume.personal.email}`}>{resume.personal.email}</a>
+    )
+  }
 
-  <a href={`tel:${resume.personal.phone}`}>
-    {resume.personal.phone}
-  </a>
+  {
+    printable ? (
+      <p>{resume.personal.phone}</p>
+    ) : (
+      <a href={`tel:${resume.personal.phone}`}>{resume.personal.phone}</a>
+    )
+  }
 
   <p>{resume.personal.location}</p>
 
-  <a
-    href={resume.personal.linkedin}
-    target="_blank"
-    style="text-decoration: underline;"
-  >
-    LinkedIn
-  </a>
-  <a
-    href={resume.personal.github}
-    target="_blank"
-    style="text-decoration: underline;"
-  >
-    Github
-  </a>
-  <a
-    href={resume.personal.website}
-    target="_blank"
-    style="text-decoration: underline;"
-  >
-    Website
-  </a>
+  {
+    (
+      <>
+        <a
+          href={resume.personal.linkedin}
+          target="_blank"
+          style="text-decoration: underline;"
+        >
+          LinkedIn
+        </a>
+        <a
+          href={resume.personal.github}
+          target="_blank"
+          style="text-decoration: underline;"
+        >
+          Github
+        </a>
+        {!printable && (
+          <a
+            href={resume.personal.website}
+            target="_blank"
+            style="text-decoration: underline;"
+          >
+            Website
+          </a>
+        )}
+      </>
+    )
+  }
 </div>

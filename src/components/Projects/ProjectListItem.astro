@@ -16,9 +16,7 @@ const { project } = Astro.props;
     <strong>{project.company}</strong> • {project.role}
   </p>
 
-  <p class="project-summary">
-    {project.description}
-  </p>
+  <p class="project-summary">{project.outcome ?? project.description}</p>
 
   <div class="project-stack">
     {

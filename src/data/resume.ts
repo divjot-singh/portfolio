@@ -2,10 +2,10 @@ export const resume = {
   personal: {
     name: "Divjot Singh",
 
-    title: "Senior / Staff Full-Stack Engineer specializing in AI-powered platforms",
+    title: "Senior / Staff Full-Stack Engineer | AI Platforms",
 
     tagline:
-      "10+ years building enterprise products, developer platforms and AI-powered applications with React, TypeScript, Next.js, Node.js and cloud-native architectures.",
+      "Building AI-powered products and enterprise platforms with React, TypeScript, Next.js, Node.js, and cloud-native architecture. Open to remote roles and international relocation.",
 
     email: "div1495@gmail.com",
 
@@ -13,26 +13,21 @@ export const resume = {
 
     location: "Noida, India",
 
-    linkedin: "https://www.linkedin.com/in/divjot-singh-043468147/",
+    linkedin: "https://www.linkedin.com/in/divjot-singh-043468147",
 
     github: "https://github.com/divjot-singh",
 
-    website: "https://portfolio.div1495.workers.dev/"
+    website: "https://portfolio.div1495.workers.dev"
   },
 
-  about: `Software Engineer with 10+ years of experience designing and building scalable web, mobile, AI-powered, and enterprise platforms. Experienced across the full product lifecycle—from architecture and backend services to modern frontend experiences and cross-platform mobile applications. Proven track record of delivering products in enterprise, healthcare, banking, gaming, legal-tech, and e-commerce domains for organizations including Microsoft, Tredence, and high-growth startups.
+  about: `Senior full-stack engineer with 10+ years of experience owning web, mobile, and AI-powered products from technical architecture through production delivery. I build scalable platforms with React, TypeScript, Next.js, Node.js, Python, and cloud-native services for enterprise and high-growth teams.
 
-Specialized in React, Next.js, Flutter, NestJS, FastAPI, TypeScript, and cloud-native architectures, with recent experience leading the development of AI-powered analytics platforms, conversational experiences, and scalable micro-frontend ecosystems. Passionate about building high-quality products, driving technical architecture, and solving complex engineering challenges through clean, maintainable, and user-focused solutions.`,
+Recent work includes conversational analytics, Microsoft 365 extensibility, multi-tenant SaaS, and cross-platform mobile applications. I am open to remote opportunities and international relocation.`,
 
   skills: {
-    languages: [
+    frontend: [
       "TypeScript",
       "JavaScript",
-      "Python",
-      "Dart"
-    ],
-
-    frontend: [
       "React",
       "Next.js",
       "Redux",
@@ -41,30 +36,32 @@ Specialized in React, Next.js, Flutter, NestJS, FastAPI, TypeScript, and cloud-n
     ],
 
     backend: [
-      "NestJS",
       "Node.js",
+      "NestJS",
+      "Python",
       "FastAPI",
       "Express"
     ],
 
-    mobile: [
-      "Flutter",
-      "Android",
-      "iOS"
-    ],
-
-    ai: [
+    "ai / llm": [
       "OpenAI",
       "AI Agents",
       "MCP",
       "Prompt Engineering"
     ],
 
-    cloud: [
+    "cloud / devops": [
       "Azure",
       "AWS",
       "Docker",
       "GitHub Actions"
+    ],
+
+    mobile: [
+      "Flutter",
+      "Android",
+      "iOS",
+      "Dart"
     ],
 
     database: [

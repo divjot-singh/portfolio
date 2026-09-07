@@ -1,5 +1,7 @@
 import { chromium } from "@playwright/test";
 
+const outputPath = "resume.pdf";
+
 const browser = await chromium.launch();
 
 const page = await browser.newPage({
@@ -9,12 +11,23 @@ const page = await browser.newPage({
   },
 });
 
-await page.goto("http://localhost:4321/resume", {
+const response = await page.goto("http://localhost:4321/resume", {
   waitUntil: "networkidle",
 });
 
+if (!response?.ok()) {
+  throw new Error(`Resume page returned HTTP ${response?.status() ?? "unknown"}`);
+}
+
+const pageText = await page.locator("body").innerText();
+
+if (!pageText.includes("Divjot Singh") || !pageText.includes("Selected Work")) {
+  throw new Error("Resume page did not render the expected content");
+}
+
+
 await page.pdf({
-  path: 'resume.pdf',
+  path: outputPath,
   format: "A4",
   printBackground: true,
   preferCSSPageSize: true,
